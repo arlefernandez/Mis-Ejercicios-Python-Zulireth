@@ -1,18 +1,18 @@
 # ==============================================================================================================================
 # CURSO: Introducción a la Programación con Python
 # ALUMNA: Zulireth Fernandez
-# CLASE: 01 - Conceptos Básicos
-# EJERCICIO: Ingreso Promedio Semestral
-# Escribir un programa que guarde en variables el monto del ingreso de cada uno de los primeros 6 meses del año.
-# Luego, calcular y guardar en otra variable el promedio de esos valores.
-# Por último, mostrar una leyenda que diga “El ingreso promedio en el semestre es de
-# xxxxx” donde “xxxxx” es el valor calculado.
+# CLASE: 02 - Conversión,tipos de datos y Metodos
+# EJERCICIO: Operaciones básicas
+# 1. Crea un programa que solicite al usuario dos números enteros.
+# 2. Realiza las siguientes operaciones: suma, resta, multiplicación, y módulo.
+# 3. Muestra el resultado de cada operación en un formato claro y amigable.
+# Asegúrate de incluir mensajes personalizados que expliquen cada resultado, por ejemplo: "La suma de tus números es: X".
 # ==============================================================================================================================
 
 import os 
 os.system ("cls")  # Limpia la pantalla en Windows; usa "clear" en Linux/Mac
 
-print("---------Bienvenido a la web de promedios---------")
+print("---------Bienvenido a la web de promedios ✌️---------")
 print()
 ingreso_enero= float(input("Ingrese el monto del ingreso del mes de Enero: $"))
 ingreso_febrero= float(input("Ingrese el monto del ingreso del mes de Febrero: $"))
@@ -29,7 +29,7 @@ print("Su ingreso mensual en mayo fue de: $", ingreso_mayo)
 print("Su ingreso mensual en junio fue de: $", ingreso_junio)
 print()
 print("Calculando el promedio de ingresos del semestre...")
-promedio_ingreso= (ingreso_enero + ingreso_febrero + ingreso_marzo + ingreso_abril + ingreso_mayo + ingreso_junio) / 6
+promedio_ingreso= round((ingreso_enero + ingreso_febrero + ingreso_marzo + ingreso_abril + ingreso_mayo + ingreso_junio) / 6,2)
 print()
 print("El ingreso promedio en el semestre es de: $", promedio_ingreso)
 
